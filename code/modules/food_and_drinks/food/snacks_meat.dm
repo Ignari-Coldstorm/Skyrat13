@@ -25,6 +25,12 @@
 	tastes = list("fish" = 1)
 	foodtype = MEAT
 
+/obj/item/reagent_containers/food/snacks/carpmeat/tcarpmeat
+	name = "tiger carp fillet"
+	desc = "A robust and nutrient filled fillet of exotic carp meat."
+	list_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 5)
+	filling_color = "#F76E5E"
+
 /obj/item/reagent_containers/food/snacks/carpmeat/Initialize()
 	. = ..()
 	eatverb = pick("bite","chew","choke down","gnaw","swallow","chomp")
